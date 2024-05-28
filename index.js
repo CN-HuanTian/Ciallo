@@ -47,10 +47,12 @@ function ciallo() {
     // 颜色
     v.style.color = randomColor()
     // 开始移动
-    setTimeout(() => {
+    //setTimeout(() => {
         v.style.right = -width + "px"
-    }, 1)
-    setTimeout(() => { v.remove }, time * 1000)
+    //}, 1)
+    //setTimeout(() => { 
+        v.remove 
+   /// }, time * 1000)
 
 
     // let time = setInterval(() => {
