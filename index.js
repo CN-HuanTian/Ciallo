@@ -38,6 +38,7 @@ function ciallo() {
         music.play();
         v.style.textShadow = `text-shadow: 10px 10px 10px ${randomColor};`
     }
+    console.log(v.offsetWidth)
 
     // 初始位置
     v.style.right = 2 * randomInt(500, 1500) + "px"
