@@ -63,10 +63,9 @@ function ciallo() {
     //     }
     // }, randomInt(5, 10))
 }
-// setInterval(() => {
-//     console.log(document.getElementsByTagName("p"))
-//     while (document.getElementsByTagName("p").length < 100) { ciallo() }
-// }, 10)
+setInterval(() => {
+    ciallo()
+}, 100)
 ciallo()
 ciallo()
 ciallo()
