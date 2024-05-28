@@ -9,7 +9,4 @@ body {
 
 p { display: inline;
     position: relative;
-    overflow: hidden;
-    background: white;
-    /* transition: all 10s linear; */
 }
