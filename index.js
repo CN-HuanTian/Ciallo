@@ -1,4 +1,4 @@
-console.log("version:1.61")
+console.log("version:1.62")
 //获取背景
 var bg = document.getElementById("body")
 
@@ -66,7 +66,7 @@ function ciallo() {
     v.onclick = () => {
         clearTimeout(removemove)
         clearTimeout(startmove)
-        let music = audio.cloneNode();
+        let music = audio.cloneNode(true);
         music.play();
         v.style.left = v.offsetLeft+"px"
         v.style.transition = "none";
