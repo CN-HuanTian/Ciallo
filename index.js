@@ -1,4 +1,4 @@
-console.log("version:1.1")
+console.log("version:1.2")
 //获取背景
 var bg = document.getElementById("body")
 //获取屏幕尺寸
