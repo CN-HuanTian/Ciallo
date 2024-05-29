@@ -66,7 +66,7 @@ function ciallo() {
     v.onclick = () => {
         clearTimeout(removemove)
         clearTimeout(startmove)
-        let music = new Audio('./assets/ciallo.mp3');
+        let music = audio.cloneNode();
         music.play();
         v.style.left = v.offsetLeft+"px"
         v.style.transition = "none";
