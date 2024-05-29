@@ -21,6 +21,9 @@ else{
 }
 console.log("Ciallo数量："+maxciallo)
 
+//测试：刷新音频
+let audio = new Audio('./assets/ciallo.mp3')
+
 //十六进制列表
 var colorlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "A", "B", "C", "D", "E", "F"]
 
@@ -32,6 +35,7 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+//随机颜色生成器
 function randomColor() {
     let code = "#"
     for (let i = 0; i < 6; i++) {
@@ -49,27 +53,27 @@ function ciallo() {
     v.style.fontSize = randomInt(20, 40) + "px"
     // 颜色
     v.style.color = randomColor()
+    // 载入至页面
     bg.appendChild(v)
     // 初始位置
     v.style.left = -100 - v.offsetWidth + "px"
     v.style.top = randomInt(0, height) + "px"
-    
-
     // 移动速度
     time = randomInt(5, 15)
     v.style.transition = `all ${time}s linear`
-
+    
     // 点击事件
     v.onclick = () => {
+        clearTimeout(removemove)
+        clearTimeout(startmove)
         let music = new Audio('./assets/ciallo.mp3');
         music.play();
         v.style.left = v.offsetLeft+"px"
-        clearTimeout(removemove)
-        clearTimeout(startmove)
         v.style.transition = "none";
         v.style.transition = `all 0.5s linear`
         v.style.opacity=0
         v.style.fontSize =Number(v.style.fontSize.slice(0, v.style.fontSize.length - 2))+5+"px"
+        v.style.textShadow = `text-shadow: 10px 10px 10px ${randomColor};`
         setTimeout(() => {
             v.remove()
         },600)
@@ -81,7 +85,7 @@ function ciallo() {
     let startmove = setTimeout(() => {
         v.style.left = width + v.offsetWidth + "px"
     }, 1000)
-
+    //一段时间后销毁
     let removemove = setTimeout(() => {
         v.remove()
     }, time * 1000 + 1000)
