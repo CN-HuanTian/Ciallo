@@ -1,4 +1,4 @@
-console.log("version:1.2")
+console.log("version:1.3")
 //获取背景
 var bg = document.getElementById("body")
 //获取屏幕尺寸
@@ -12,7 +12,7 @@ let mobile = !!u.match(/AppleWebKit.*Mobile.*/)
 console.log("设备："+mobile)
 var maxciallo=0
 if(mobile){maxciallo=25}
-else{maxciallo=100}
+else{maxciallo=150}
 console.log("Ciallo数量："+maxciallo)
 //十六进制列表
 var colorlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "A", "B", "C", "D", "E", "F"]
