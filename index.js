@@ -1,4 +1,4 @@
-console.log("version:1.5")
+console.log("version:1.6")
 //获取背景
 var bg = document.getElementById("body")
 
@@ -17,7 +17,7 @@ var ciallosleep = 500
 if(mobile){maxciallo=25}
 else{
     maxciallo=150
-    ciallosleep=250
+    ciallosleep=50
 }
 console.log("Ciallo数量："+maxciallo)
 
