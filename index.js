@@ -79,6 +79,7 @@ function ciallo() {
     }, time * 1000 + 1000)
 
 }
+console.log("Ciallo~")
 setInterval(() => {
     while(maxciallo>document.getElementsByTagName("p")){
         ciallo()
