@@ -1,11 +1,19 @@
+//获取背景
 var bg = document.getElementById("body")
+//获取屏幕尺寸
 var width = window.innerWidth;
 var height = window.innerHeight;
 console.log('窗口宽度：' + width);
 console.log('窗口高度：' + height);
+//判断是否为移动设备并限制ciallo数量
 let u = navigator.userAgent
 let mobile = !!u.match(/AppleWebKit.*Mobile.*/)
 console.log("设备："+mobile)
+let maxciallo=0
+if(mobile){maxciallo=50}
+else{maxciallo=200}
+
+//十六进制列表
 var colorlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "A", "B", "C", "D", "E", "F"]
 
 // 随机数生成器
@@ -72,6 +80,9 @@ function ciallo() {
 
 }
 setInterval(() => {
-    ciallo()
+    while(maxciall>document.getElementsByTagName("p")){
+        ciallo()
+    }
+    //ciallo()
 }, 100)
 // ciallo()
