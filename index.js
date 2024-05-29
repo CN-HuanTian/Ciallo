@@ -3,6 +3,7 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 console.log('窗口宽度：' + width);
 console.log('窗口高度：' + height);
+let u = navigator.userAgent
 let mobile = !!u.match(/AppleWebKit.*Mobile.*/)
 console.log("设备："+mobile)
 var colorlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "A", "B", "C", "D", "E", "F"]
