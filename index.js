@@ -1,4 +1,4 @@
-console.log("version:1.6")
+console.log("version:1.61")
 //获取背景
 var bg = document.getElementById("body")
 
