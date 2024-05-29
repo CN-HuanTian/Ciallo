@@ -1,3 +1,4 @@
+console.log("version:1.1")
 //获取背景
 var bg = document.getElementById("body")
 //获取屏幕尺寸
@@ -80,11 +81,22 @@ function ciallo() {
 
 }
 console.log("Ciallo~")
+
+//启动器
+let startciallo = setInterval(() => {
+    if(maxciallo>document.getElementsByTagName("p").length){
+       clearTimeout(startciallo) 
+    }
+        ciallo()
+}, 500)
+
+//循环器
 setInterval(() => {
     //console.log("Ciallo当前数量："+document.getElementsByTagName("p"))
     while(maxciallo>document.getElementsByTagName("p").length){
         ciallo()
     }
+    
     //ciallo()
-}, 100)
+}, 500)
 // ciallo()
