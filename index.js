@@ -81,8 +81,8 @@ function ciallo() {
 }
 console.log("Ciallo~")
 setInterval(() => {
-    console.log("Ciallo当前数量："+document.getElementsByTagName("p"))
-    while(maxciallo>document.getElementsByTagName("p")){
+    //console.log("Ciallo当前数量："+document.getElementsByTagName("p"))
+    while(maxciallo>document.getElementsByTagName("p").length){
         ciallo()
     }
     //ciallo()
