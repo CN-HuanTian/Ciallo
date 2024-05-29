@@ -80,7 +80,7 @@ function ciallo() {
 
 }
 setInterval(() => {
-    while(maxciall>document.getElementsByTagName("p")){
+    while(maxciallo>document.getElementsByTagName("p")){
         ciallo()
     }
     //ciallo()
