@@ -16,8 +16,8 @@ var maxciallo=0
 var ciallosleep = 500
 if(mobile){maxciallo=25}
 else{
-    maxciallo=150
-    ciallosleep=50
+    maxciallo=100
+    ciallosleep=100
 }
 console.log("Ciallo数量："+maxciallo)
 
