@@ -74,10 +74,10 @@ function ciallo() {
         v.style.opacity=0
         v.style.fontSize =Number(v.style.fontSize.slice(0, v.style.fontSize.length - 2))+5+"px"
         v.style.textShadow = `text-shadow: 10px 10px 10px ${randomColor};`
+        v.style.pointerEvents = "none"
         setTimeout(() => {
             v.remove()
         },600)
-        // v.style.textShadow = `text-shadow: 10px 10px 10px ${randomColor};`
     }
 
 
