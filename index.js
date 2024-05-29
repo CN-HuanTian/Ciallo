@@ -9,7 +9,7 @@ console.log('窗口高度：' + height);
 let u = navigator.userAgent
 let mobile = !!u.match(/AppleWebKit.*Mobile.*/)
 console.log("设备："+mobile)
-let maxciallo=0
+var maxciallo=0
 if(mobile){maxciallo=50}
 else{maxciallo=200}
 console.log("Ciallo数量："+maxciallo)
