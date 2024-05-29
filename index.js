@@ -1,19 +1,26 @@
 console.log("version:1.3")
 //获取背景
 var bg = document.getElementById("body")
+
 //获取屏幕尺寸
 var width = window.innerWidth;
 var height = window.innerHeight;
 console.log('窗口宽度：' + width);
 console.log('窗口高度：' + height);
+
 //判断是否为移动设备并限制ciallo数量
 let u = navigator.userAgent
 let mobile = !!u.match(/AppleWebKit.*Mobile.*/)
 console.log("设备："+mobile)
 var maxciallo=0
+var ciallosleep = 500
 if(mobile){maxciallo=25}
-else{maxciallo=150}
+else{
+    maxciallo=150
+    ciallosleep=250
+}
 console.log("Ciallo数量："+maxciallo)
+
 //十六进制列表
 var colorlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "A", "B", "C", "D", "E", "F"]
 
@@ -90,13 +97,13 @@ let startciallo = setInterval(() => {
         keepciallo()
         clearTimeout(startciallo) 
     }
-}, 500)
+}, ciallosleep)
 function keepciallo(){
     //循环器
     setInterval(() => {
         while(maxciallo>document.getElementsByTagName("p").length){
             ciallo()
         }
-    }, 500)
+    }, ciallosleep)
 }
 // ciallo()
