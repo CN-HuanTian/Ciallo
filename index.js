@@ -1,4 +1,7 @@
 console.log("version:1.62")
+console.log("BY 幻天")
+console.log("QQ:3365543554")
+console.log("开源，使用/引用时标明出处")
 //获取背景
 var bg = document.getElementById("body")
 
@@ -11,7 +14,7 @@ console.log('窗口高度：' + height);
 //判断是否为移动设备并限制ciallo数量
 let u = navigator.userAgent
 let mobile = !!u.match(/AppleWebKit.*Mobile.*/)
-console.log("设备："+mobile)
+console.log("pc设备："+!mobile)
 var maxciallo=0
 var ciallosleep = 500
 if(mobile){maxciallo=25}
