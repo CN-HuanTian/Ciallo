@@ -85,18 +85,17 @@ console.log("Ciallo~")
 //启动器
 let startciallo = setInterval(() => {
     if(maxciallo>document.getElementsByTagName("p").length){
-       clearTimeout(startciallo) 
+        keepciallo()
+        clearTimeout(startciallo) 
     }
         ciallo()
 }, 500)
-
+function keepciallo(){
 //循环器
 setInterval(() => {
-    //console.log("Ciallo当前数量："+document.getElementsByTagName("p"))
     while(maxciallo>document.getElementsByTagName("p").length){
         ciallo()
     }
-    
-    //ciallo()
 }, 500)
+}
 // ciallo()
