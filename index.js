@@ -10,8 +10,8 @@ let u = navigator.userAgent
 let mobile = !!u.match(/AppleWebKit.*Mobile.*/)
 console.log("设备："+mobile)
 var maxciallo=0
-if(mobile){maxciallo=50}
-else{maxciallo=200}
+if(mobile){maxciallo=25}
+else{maxciallo=100}
 console.log("Ciallo数量："+maxciallo)
 //十六进制列表
 var colorlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "A", "B", "C", "D", "E", "F"]
